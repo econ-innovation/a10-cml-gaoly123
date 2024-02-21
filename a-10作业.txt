@@ -1,0 +1,23 @@
+尝试发送邮件却显示postfix未安装，尝试安装postfix却失败
+错误显示为：
+Processing triggersForlDCOAIadmin@LAPTOP-SOEKGEV9:~$ mail -Vmail (GNU Mailutils) 3,15
+Copyright (C) 2007-2022 Free Software Foundation, inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu,org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+admin@LAPTOP-SOEKGEV9:$ mal -s发邮件到公邮idealab2022@163.Com
+尝试发送邮件，但感觉会失败
+cannot send message: Process exited with a non-zero status
+admin@LAPTOP-SOEKGEV9:~$mail -s'发邮件'-a From:Admin \<gaolingyun3362@163.com>
+idealab20220163.com <<<'试一试邮件'
+To: idealab20220163.com
+Cc:
+
+Null message body; hope that's ok
+bash: idealab2022@163.com: command not found
+admin@LAPTOP-SOEKGEV9;$ sudo dpkg-reconfigure postfix
+[sudo] .password for admin:
+dpkg-query: package 'postfix' is not installed and no information is available
+Use dpkg --info ( dpkg-deb --info) to examine archive files.
+/usr/sbin/dpkg-reconfigure:postfix is not installed
+admin@LAPTOP-SOEKGEV9:~$
